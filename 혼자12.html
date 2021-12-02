@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #toptop{
+            text-decoration: none;
+            color: red;
+            background-color: black;
+            font-size: 50px;
+            text-align: center;
+            
+            width: 50px;
+            height: 50px;
+            border-radius: 70%;
+            line-height: 45px;
+
+            position: fixed;
+            right: 50px;
+            bottom: 100px;
+            z-index: 100;
+
+        }
+    </style>
+    <title>나홀로링크태그</title>
+</head>
+<body>
+    <h1 id="top">나홀로 링크태그</h1>
+    <h2>앵커테그를 이용한 프로토콜 링크</h2>
+    <a href="https://www.naver.com">네이버로 현재창에서 이동함</a>
+    <br>
+    <a href="https://www.naver.com" target="_blank">네이버로 새창에서 이동함</a>
+    <br>
+    <a href="mailto:huklmnj2@naver.com">클릭시 huklmnj2@naver.com으로 메일을 보낼 수 있음</a>
+    <br>
+    <a href="tel:+021022881444">클릭시 010-2288-1444로 통화를 걸 수 있음</a>
+    <p>
+        4가지다 프로토콜 형식
+    </p>
+    <h2>이미지 링크</h2>
+    <a href="./imgs/js-img.jpg" target="_blank">클릭시 js이미지로 이동함</a>
+    <br>
+    <a href="./텍스트테스트.txt" target="_black">클릭시 txt파일도 가능한가?</a>
+    <p>
+        한글파일은 웹상에서 지원이 되지 않기에 바로 다운로드가 되는 반면 txt파일은 바로 웹상에서 표현가능
+        <br><br>
+        #은 고유 아이디를 의미한다
+    </p>
+    <a href="#BOX01">빨간색 박스</a>
+    <a href="#BOX02">노란색 박스</a>
+    <a href="#BOX03">오렌지 박스</a>
+    <a href="#BOX04">하얀색 박스</a>
+    <a href="#BOX05">핑크색 박스</a>
+
+    <a href="#top" id="toptop">!</a>
+
+    <div id="BOX01" style="background-color: red; height: 300px;">1</div>
+    <div id="BOX02" style="background-color: gold; height: 300px;">2</div>
+    <div id="BOX03" style="background-color: darkorange; height: 300px;">3</div>
+    <div id="BOX04" style="background-color: lightgoldenrodyellow; height: 300px;">4</div>
+    <div id="BOX05" style="background-color: lightcoral; height: 300px;">5</div>
+
+    <a href="#top">누르면 맨 위로 갑니다 정확히는 맨위는 아니고 h1나홀로 링크 태그로 이동해요</a>
+    
+</body>
+</html>

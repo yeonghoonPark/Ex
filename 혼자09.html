@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나홀로연습9 글자 강조</title>
+</head>
+<body>
+    <h1>글자 강조</h1>
+    <h2>굵기</h2>
+    <h3>&lt;b&gt;태그</h3>
+        <p>
+            p태그 안에서 문단의 글자를 굵게 강조
+            <br>
+            <b>강조</b>
+            <br>
+            위의 강조라는 글자를 &lt;b&gt;강조&lt;/b&gt;로 태그를 줘서 글자를 굵게 만든 것
+            <br>
+            b태그는 스타일만 존재 할 뿐, 뜻은 없다. 단순히 굵게 만들어 줄 뿐
+            <br>
+            b태그는 자주 사용하진 않는다, 두께가 이미 정해져있다
+        </p>
+    <h3>&lt;strong&gt;태그</h3>
+         <p>
+             p태그 안에서 문단의 글자를 굵고 뜻이 있게 강조
+             <br>
+             <strong>의미있는 강조</strong>
+             <br>
+             위의 의미있는 강조라는 글자를 &lt;strong&gt;의미있는 강조&lt;/strong&gt;로 태그를 줘서 글자를 굵게 만들고 강조를 의미한 것
+             <br>
+             b태그는 의미가 없는 반면 strong태그는 굵게 강조해줄 뿐만 아니라 의미까지 강조해준다고 보면 된다
+             <br>
+             화면낭독기가 지원 될 때에는 악센트가 붙는다
+             <br>
+             b태그보다는 strong태그를 더 많이 사용한다
+         </p>
+    <h3>&lt;span&gt;태그</h3>
+         <p>
+             p태그 안에서 아무 의미가 없지만 span태그를 이용하면 Markup을 할 수 있게 된다
+             <br>
+             이는 CSS로 스타일을 따로 지정 할 수 있게 됨을 의미한다
+             <br>
+             <span style="
+                font-weight: bolder;
+             ">대한민국</span>
+             <br>
+             위의 대한민국을 b태그나 strong태그를 주지 않고 span태그를 사용하여
+             <br>
+             span태그에 inline형식으로 직접 CSS를 적용한 것
+         </p>
+         <hr>
+    <h2>기울임</h2>
+    <h3>&lt;i&gt;태그</h3>
+         <p>
+             i태그를 사용하여 기울임을 줄 수 있다
+             <br>
+             i태그는 기울임을 주지만 의미부여는 하지 않는다
+             <br>
+             &lt;i&gt;기울임&lt;/i&gt;
+             <br>
+             위의 기울임 글자에 i태그를 사용함으로 글자를 기울게 함
+         </p>
+    <h3>&lt;em&gt;태그</h3>
+         <p>
+             em태그를 사용하여서 글자를 기울게 할 수 있다
+             <br>
+             em태그는 i태그와 다르게 기울임을 주면서 강조하는 의미를 가진다
+             <br>
+             화면낭독기가 지원된다면 em태그를 준 곳은 강조된다
+             <br>
+             &lt;em&gt;강조하는 기울임&lt;/em&gt; 
+         </p>
+
+    
+</body>
+</html>
