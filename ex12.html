@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연결(link) TAG</title>
+    <style>
+        a#btn-top{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            font-size: 32px;
+            text-align: center;
+            
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            line-height: 50px;
+
+            position: fixed;
+            right: 100px;
+            bottom: 200px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="doc-top">연결(link) TAG</h1>
+    <a href="https://www.naver.com">네이버로 이동</a>
+    <br>
+    <a href="http://www.daum.net" target="_blank" rel="noopener noreferrer">다음으로 이동</a>
+    <br>
+    <a href="mailto:huklmnj2@naver.com">메일을 보내시려면 클릭하세요</a>
+    <br>
+    <a href="tel:+021022881444">통화를 원하시면 클릭하세요</a>
+    <br>
+    <a href="./imgs/css-img.jpg" target="_blank">CSS이미지</a>
+    <br>
+    <a href="./hello.hwp">한글파일</a>
+    <br>
+    <a href="#BOX1">1번박스로</a>
+    <a href="#BOX2">2번박스로</a>
+    <a href="#BOX3">3번박스로</a>
+    <a href="#BOX4">4번박스로</a>
+    <a href="#BOX5">5번박스로</a>
+    <br>
+    <a href="#">예제15파일로</a>
+
+    <a href="#doc-top" id="btn-top">^</a>
+
+    <div id="BOX1" style="height: 500px; background-color: red;">1번박스</div>
+    <div id="BOX2" style="height: 500px; background-color: yellow;">2번박스</div>
+    <div id="BOX3" style="height: 500px; background-color: green;">3번박스</div>
+    <div id="BOX4" style="height: 500px; background-color: blue;">4번박스</div>
+    <div id="BOX5" style="height: 500px; background-color: black;">5번박스</div>
+
+</body>
+</html>
