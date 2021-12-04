@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 이미지(Responsive Image)</title>
+</head>
+<body>
+    <h1 style="text-align: center;">반응형 이미지(Responsive Image)</h1>
+        <div>
+        <figure>
+            <figcaption>ㅋ ㅓㅍ ㅣ</figcaption>
+            <picture>
+            <source media="(min-width: 1000px)" srcset="./imgs/coffee2.svg">
+            <source media="(min-width: 800px)" srcset="./imgs/coffee3.png">
+            <source media="(min-width: 600px)" srcset="./imgs/coffee4.jpg">
+            <img src="./imgs/coffee.gif" alt="커피 1">
+            </picture>
+        </figure>
+        </div>
+</body>
+</html>
