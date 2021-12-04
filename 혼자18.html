@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오(Video)</title>
+</head>
+<body>
+    <h1>비디오(Video)</h1>
+        <p>
+            <pre>
+비디오표준 : mp4, webm, ogv
+오디오표준 : mp3, ogg
+비디오(오디오)의 속성(attribute)
+controls, autopla muted, loop
+            </pre>
+        </p>
+        <br>
+        <video src="./media/coffee1.mp4" controls autoplay muted loop></video>
+        <p>
+            autoplay에서 muted를 붙이지 않아도 자동으로 재생이 되는 것이 위의 영상은
+            <br>
+            소리를 지원해주지 않기 때문에 재생이 되는 것 같다
+        </p>
+        <br>
+        <audio src="./media/coffee1.mp3" controls loop></audio>
+        <br>
+        <audio controls>
+            <source src="media/coffee1.mp3" type="">
+            <source src="media/coffee2.mp3" type="">
+            <source src="media/coffee3.mp3" type="">
+
+        </audio>
+        
+
+</body>
+</html>
