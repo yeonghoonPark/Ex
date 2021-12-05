@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            padding-left: 2px;
+        }
+    </style>
+    <title>양식4 input 속성</title>
+</head>
+<body>
+    <h1>양식4 input 속성</h1>
+    <form action="">
+        <fieldset>
+            <legend>input의 속성</legend>
+            <input type="text" autofocus placeholder="아이디 입력란">
+            <br>
+            <label for=""><input type="password" placeholder="비밀번호 입력란" minlength="8" maxlength="12">최소8글자 최대12글자를 지키지 않으면 전송되지 않습니다</label>
+            <br>
+            <input type="text" placeholder="입력 불가" disabled>
+            <br>
+            <label for=""><input type="text" placeholder="필수 입력" required>입력하지 않으면 전송되지 않습니다</label>
+            <br>
+            <input type="number" placeholder="나이" max="100" min="0" step="1">나이를 입력하하세요
+            <br>
+            <label for=""><input type="radio" name="sex" checked>남자</label>
+            <label for=""><input type="radio" name="sex">여자</label> (성별을 선택해 주세요)
+            <br>
+            <label for=""><input type="checkbox">도보</label>
+            <label for=""><input type="checkbox">지하철</label>
+            <label for=""><input type="checkbox">버스</label> (선호하시는 교통수단을 선택해 주세요)
+        </fieldset>
+        <div>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+        </div>
+    </form>
+</body>
+</html>

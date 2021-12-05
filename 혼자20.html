@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #fieldset1{
+            margin-right: 500px;
+            min-width: 300px;
+            max-width: 300px;
+        }
+    </style>
+    <title>양식2</title>
+</head>
+<body>
+    <h1>체크박스와 라디오버튼</h1>
+    <form action="">
+        <h2>수강 분야(복수 선택 가능)</h2>
+        <input type="checkbox" id="mun1">
+        <label for="mun1">문법</label>
+        <br>
+        <p>위의 형식과 아래의 형식은 다르다</p>
+        <br>
+        <fieldset id="fieldset1">
+            <legend>복수선택 가능</legend>
+            <label for="m1"><input type="checkbox" id="m1">문법</label>
+            <br>
+            <label for="j1"><input type="checkbox" id="j1" checked>작문</label>
+            <br>
+            <label for="d1"><input type="checkbox" id="d1">독해</label>
+        </fieldset>
+        <br>
+        <h2>수강 과목(1과목만 선택 가능)</h2>
+        <fieldset id="fieldset2">
+            <legend>1과목만 선택 가능</legend>
+            <label for="k1"><input type="radio" name="tmp" id="k1">국어</label>
+            <label for="e1"><input type="radio" name="tmp" id="e1">영어</label>
+            <label for="s1"><input type="radio" name="tmp" id="s1" checked>수학</label>
+        </fieldset>
+    </form>
+</body>
+</html>
