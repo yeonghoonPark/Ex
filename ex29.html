@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p{
+            width: 500px;
+            white-space: nowrap;
+            background-color: #f00;
+            text-overflow: ellipsis;
+            text-align: justify;
+
+            overflow: hidden;
+        }
+
+        #second-ptag{
+            letter-spacing: 10px;
+            word-spacing: 30px;
+            font-stretch: 150%;
+        }
+        h3{
+            /* direction: rtl; */
+            text-align: left;
+            text-align: right;
+        }
+
+        li:first-child{
+            text-indent: 100px;
+        }
+        li:nth-child(2){
+            text-indent: -50px;
+        }
+        li:nth-child(3){
+            list-style: none;
+            font-size: 30px;
+            line-height: 1.0;
+        }
+
+        h4{
+            width: 300px;
+            height: 300px;
+            background-color: #eee;
+            text-align: center;
+            line-height: 300px;
+        }
+       
+    </style>
+    <title>Text 스타일, 문단 스타일</title>
+</head>
+<body>
+    <h1>Text스타일, 문단 스타일</h1>
+    <h2>Text스타일</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sit beatae sed voluptatum quod! Iste inventore recusandae, cumque ab, debitis dicta animi labore minus eum molestias ad officiis tenetur reiciendis?
+    </p>
+
+    <p id="second-ptag">
+        Lorem ipsum dolor sit amet.
+    </p>
+
+    <h2>문단 스타일</h2>
+    <h3>
+        大 韓 民 國
+    </h3>
+
+    <ul>
+        <li>박스1</li>
+        <li>박스2</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur exercitationem temporibus ea autem ullam non accusantium? Commodi pariatur reiciendis quibusdam tempore? Natus ullam, possimus facilis laudantium vitae sequi ut.</li>
+        <li>박스4</li>
+        <li>박스5</li>
+    </ul>
+
+    <h4>
+        대한민국
+    </h4>
+</body>
+</html>
