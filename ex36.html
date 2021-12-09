@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .par-box{
+            position: relative;
+            width: 642px;
+            height: 242px;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        .par-box>div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        .child-box01{
+            background: #f00;
+            left: 20px;
+            top: 20px;
+        }
+        .child-box02{
+            background: #0f0;
+            left: 220px;
+            top: 20px;
+        }
+        .child-box03{
+            position: fixed;
+            background: #00f;
+            left: 420px;
+            top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="par-box">
+        <div class="child-box01">자1</div>
+        <div class="child-box02">자2</div>
+        <div class="child-box03">자3</div>
+    </div>
+</body>
+</html>

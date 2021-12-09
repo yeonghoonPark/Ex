@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        ol ul li{
+            text-decoration: none;
+        }
+        .header{
+            padding: 20px;
+            background: #666;
+            font-weight: 700;
+            font-size: 32px;
+            color: #fff;
+        }
+        .main>*{
+            float: left;
+            padding: 20px;
+            height: 500px;
+        }
+        .main .aside{
+            width: 25%;
+            background: #999;
+        }
+        .main .section{
+            width: 50%;
+            background: #aaa;
+        }
+
+    </style>
+    <title>퀴즈2</title>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header">
+            제목
+        </header>
+        <main class="clearfix">
+            <aside class="aside aside01">
+                사이드바1
+            </aside>
+            <section class="section">
+                본문
+            </section>
+            <aside class="aside aside02">
+                사이드바2
+            </aside>
+        </main>
+        <footer class="footer">
+            주소
+        </footer>
+       
+    </section>
+</body>
+</html>
