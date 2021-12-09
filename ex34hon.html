@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        .box01{
+            float: left;
+        }
+        .box02{
+            float: right;
+        }
+        .box03{
+            clear: both;
+        }
+
+        .clear-box{
+            border: 1px solid #000;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .clear-box::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .box04{
+            float: left;
+        }
+        .box05{
+            float: right;
+        }
+
+        .par-box{
+            border: 2px solid #f00;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .par-box>div{
+            float: left;
+        }
+        .par-box::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+    <title>float clear</title>
+</head>
+<body>
+    <h1>float clear</h1>
+    <div class="box">
+        <div class="box01">박스1</div>
+        <div class="box02">박스2</div>
+        <div class="box03">박스3</div>
+    </div>
+
+    <div class="clear-box">
+        <div class="box04">박스4</div>
+        <div class="box05">박스5</div>
+    </div>
+
+    <div class="par-box">
+        <div class="box01">자식1</div>
+        <div class="box02">자식2</div>
+    </div>
+</body>
+</html>

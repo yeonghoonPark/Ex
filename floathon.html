@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .bu-box::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .box{
+            box-sizing: border-box;
+            display: block;
+            width: 300px;
+            height: 300px;
+            float: left;
+        }
+        .box01{
+            background: #f00;
+        }
+        .box02{
+            background: #0f0;
+        }
+        .box03{
+            background: #00f;
+        }
+
+        .par-box{
+            width: 900px;
+            height: 300px;
+            margin: 50px auto;
+            border: 1px solid #000;
+            padding: 0;
+        }
+        .child-box{
+            display: inline-block;
+            width: 296.2px;
+            height: 300px;
+            margin: 0;
+            padding: 0;
+            
+        }
+        .child-box01{
+            background: #f00;
+            font-size: 100px;
+        }
+        .child-box02{
+            background: #0f0;
+            font-size: 100px;
+        }
+        .child-box03{
+            background: #00f;
+            font-size: 100px;
+        }
+        
+    </style>
+    <title>float</title>
+</head>
+<body>
+    <h1>인라인박스</h1>
+    <div id="bu-box">
+        <div class="box box01">박스1</div>
+        <div class="box box02">박스2</div>
+        <div class="box box03">박스3</div>
+    </div>
+
+    <div class="par-box">
+        <div class="child-box child-box01">박1</div>
+        <div class="child-box child-box02">박2</div>
+        <div class="child-box child-box03">박3</div>
+    </div>
+</body>
+</html>

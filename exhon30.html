@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록스타일</title>
+    <style>
+        ul>li{
+            list-style-type: decimal;
+            list-style-position: outside;
+            /* list-style-image: url(./imgs/rocket.svg); */
+        }
+        ol>li{
+            list-style: disc inside url(./imgs/rocket.svg)
+        }
+    </style>
+</head>
+<body>
+    <h1>목록스타일</h1>
+    <h2>순서없는 목록(ul)</h2>
+    <ul>
+        <li>순서없는목록1</li>
+        <li>순서없는목록2</li>
+        <li>순서없는목록3</li>
+        <li>순서없는목록4</li>
+        <li>순서없는목록5</li>
+    </ul>
+
+    <h2>순서있는 목록(ol)</h2>
+    <ol>
+        <li>순서있는목록1</li>
+        <li>순서있는목록2</li>
+        <li>순서있는목록3</li>
+        <li>순서있는목록4</li>
+        <li>순서있는목록5</li>
+    </ol>
+</body>
+</html>
