@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .par-box{
+            
+            width: 642px;
+            height: 242px;
+            border: 1px solid #000;
+            padding: 20px;
+            margin: 100px auto;
+        }
+        .par-box div{
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        .child-box01{
+            background: #f00;
+            left: 20px;
+            top: 20px;
+            z-index: 3;
+        }
+        .child-box02{
+            background: chartreuse;
+            left: 220px;
+            top: 20px;
+        }
+        .child-box03{
+            background: darkblue;
+            left: 420px;
+            top: 20px;
+        }
+    </style>
+    <title>Position 2</title>
+</head>
+<body>
+    <div class="par-box">
+        <div class="child-box01">자식1</div>
+        <div class="child-box02">자식2</div>
+        <div class="child-box03">자식3</div>
+    </div>
+</body>
+</html>
