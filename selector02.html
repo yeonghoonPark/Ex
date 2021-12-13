@@ -4,100 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자2</title>
     <style>
-        /* 자식 선택자 */
-        #box>div>div>div{
-            color: red;
-        }
-        #box>div>div>div>div{
-            color: black;
-        }
+        /* 자식선택자 */
+        #box>div>div>div{color:red;}
+        #box>div>div>div>div{color:black;}
 
-        li{
-            border: 2px solid black;
-        }
-        /* 다음동생 선택자 */
-        #list03,#list03+li{
-            border-color: red;
-        }
-        #list03+li+li{
-            border-color: green;
-        }
-        /* 동생들 선택자 (무식한방법) */
-        /* #list06+li,#list06+li+li,#list06+li+li+li{
+        li{border:2px solid black;}
 
-        } */
-        /* 동생들 선택자 (똑똑한방법) */
-        #list06~li{
-            border-color: blue;
-        }
-        #list03~li{
-            color: cyan;
-        }
-        #list09,#list09+li{
-            color: black !important;
-        }
-        /* 동일한 엘리먼트가 반복적으로 배치일 때 원하는 위치를 선택 */
-        #list li:first-child{
-            color: red;
-        }
-        #list li:last-child{
-            color: red;
-        }
-        #list li:nth-child(5){
-            color: green;
-        }
-        #list li:nth-child(1){
-            color: green;
-        }
-        #list li:nth-child(2n){
-            border-color: blue;
-        }
-        #list li:nth-child(2n+1){
-            border-color: cyan;
-        }
-        #list li:nth-child(3n){
-            color: red;
-        }
+        /* 다음동생선택자 */
+        #list03,#list03+li{border-color:red;}
+        #list03+li+li{border-color:green;}
+
+        /* 동생들선택자 */
+        #list06~li{border-color:blue;}
+
+        #list03~li{color:cyan;}
+        #list09,#list09+li{color:black !important;}
+
+        /* 동일한 엘리먼트 반복적으로 배치 원하는 위치를 선택 */
+        #list li:first-child{color:red;}
+        #list li:last-child{color:red;}
+        #list li:nth-child(5){color:green;}
+        #list li:nth-child(1){color:green;}
+        #list li:nth-child(2n){border-color:blue;}
+        #list li:nth-child(2n+1){border-color:cyan;}
+        #list li:nth-child(3n){color:red;}
 
         #par-box *{
-            font-weight: 400;
-            font-size: 20px;
-            /* 마진을 0으로 놓으니 h3와 div의 글자 크기가 같아졌다 */
-            margin: 0; 
+            font-weight:400;
+            font-size:20px;
+            margin:0;
         }
-        /* 동일하지 않은 엘리먼트 중 원하는 위치를 선택 */
-        #par-box>div:first-of-type{
-            color: red;
-        }
-        #par-box>div:nth-of-type(3){
-            color: greenyellow;
-        }
-        #par-box>*:nth-child(3){
-            color: magenta;
-        }
-        /* #par-box>*:nth-of-type(5){
-            color: maroon;
-        } */
 
-        .array-box{
-            width: 100px;
-            height: 100px;
-        }
-        /* 하위요소를 전혀 가지지 않은(비어있는) 선택자 */
-        .array-box:empty{
-            background-color: red;
-        }
+        /* 동일하지 않은 엘리먼트중 원하는 위치를 선택 */
+        #par-box>div:first-of-type{color:red;}
+        #par-box>div:nth-of-type(3){color:red;}
+        #par-box>*:nth-child(3){color:white;}
+        /* #par-box>*:nth-of-type(5){color:white;} */
+
+        .array-box{width:100px;height:60px;}
+        /* 하위요소를 전혀 가지지 않은 선택자 */
+        .array-box:empty{background-color:red;}
+
         .array-box>div:only-child{
-            display: none;
+            display:none;
         }
+
         body>div:not(.array-box){
-            font-size: 50px;
-            color: maroon;
-            background-color: black;
+            font-size:50px;
+            color:darkolivegreen;
+            background-color:black;
         }
     </style>
-    <title>선택자2</title>
 </head>
 <body>
     <h1>선택자2</h1>
@@ -114,8 +73,9 @@
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
+
     <ul>
         <li>목록1</li>
         <li>목록2</li>
@@ -164,14 +124,14 @@
 
     <div id="par-box">
         <p>child00</p>
-        <div>child01</div>
+        <div>child01</div>        
         <div>child02</div>
         <div>child03</div>
         <h3>child04</h3>
         <div>child05</div>
         <div>child06</div>
     </div>
-    <br><br><br>
+
     <div class="array-box">
         <div>1-1</div>
         <div>1-2</div>
@@ -186,10 +146,7 @@
     </div>
     <div class="array-box"></div>
     <div class="array-box">
-        <div>
-            4-1
-        </div>
+        <div>4-1</div>
     </div>
-    
 </body>
 </html>

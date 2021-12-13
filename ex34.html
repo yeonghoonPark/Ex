@@ -6,76 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>float clear</title>
     <style>
-        /* CSS reset */
+        /* css reset */
         .clearfix::after{
-            content: '';
-            display: block;
-            clear: both;
+            content:'';
+            display:block;
+            clear:both;
         }
 
-        .box{
-            border: 1px solid #000;
-            padding: 10px;
+
+        .box,.clearfix{
+            margin:20px;
+            border:1px solid black;
+            padding:10px;
         }
-        .box01{
-            float: left;
-            background: #f00;
-        }
-        .box02{
-            float: right;
-            background: #0f0
-        }
-        .box03{
-            clear: both;
-        }
-        .clearfix{
-            border: 1px solid #000;
-            padding: 10px;
-            margin: 20px 0;
-        }
-        .box04{
-            float: left;
-        }
-        .box05{
-            float: right;
-        }
+        .box01,.box04{float:left;background-color:red;}
+        .box02,.box05{float:right;background-color:green;}
+        .box03{clear:both;}
+
+
+
 
         .par-box{
-            border: 2px solid #f00;
-            padding: 10px;
+            border:2px solid red;
+            padding:10px;
         }
         .par-box>div{
-            float: left;
-        }
-        .par-box::after{
-            content: '';
-            display: block;
-            clear: both;
+            display:inline-block;
         }
     </style>
 </head>
 <body>
-    <h1>float clear</h1>
+    <h1>float clear</h1>    
     <div class="box">
         <div class="box01">박스1</div>
         <div class="box02">박스2</div>
         <div class="box03">박스3</div>
     </div>
-    
+
     <div class="clearfix">
         <!-- ::before -->
-        <div class="box04">박스4</div>
-        <div class="box05">박스5</div>
+        <div class="box04">박스04</div>
+        <div class="box05">박스05</div>
         <!-- ::after -->
     </div>
 
-    <div class="par-box">
-        <div class="box01">자식1</div>
-        <div class="box02">자식2</div>
+    <div class="par-box clearfix">
+        <div class="child-box01">자식1</div>
+        <div class="child-box02">자식2</div>        
     </div>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cumque voluptates neque ea libero? Adipisci id delectus doloribus a nisi, deleniti, expedita quisquam alias beatae eum, repellat dolorum ratione repudiandae!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam eum expedita repellat. Iste praesentium incidunt itaque! Repudiandae unde quos neque iure, culpa exercitationem ipsa vitae aut architecto deleniti in error.</p>
     <h3>제목3</h3>
-    <img src="./imgs/coffee2.svg" alt="">
+    <img src="./images/coffee2.svg" alt="커피">
 </body>
 </html>

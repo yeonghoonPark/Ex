@@ -9,17 +9,15 @@
 <body>
     <form>
         <h1>양식4 input 속성</h1>
-        <input type="text" autofocus placeholder="아이디를 입력하세요">
+        <input type="text" autofocus placeholder="아이디를 입력하세요" disabled>
         <br>
-        <input type="text" placeholder="필수-성명입력" required size="30" maxlength="10" minlength="5">
+        <input type="text" id="name" name="name" value="홍길동" placeholder="필수-성명입력" required size="30" maxlength="30" minlength="8">
         <br>
-        <input type="number" autofocus placeholder="나이를 입력하세요" max="120" min="0" step="1">
+        <input type="number" autofocus placeholder="나이를 입력하세요" max="120" min="0" step="5">
         <br>
         <input type="checkbox" checked>
         <br>
-        <input type="text" autofocus placeholder="disabled는 잠금" disabled>
-        <br>
         <input type="submit" value="보내기">
-    </form> 
+    </form>
 </body>
 </html>

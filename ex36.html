@@ -8,46 +8,45 @@
     <style>
         *{
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+            margin:0;
+            padding:0;
         }
         .par-box{
-            position: relative;
-            width: 642px;
-            height: 242px;
-            border: 1px solid black;
-            padding: 20px;
-            margin: 0 auto;
-        }
-        .par-box>div{
-            width: 200px;
-            height: 200px;
-            position: absolute;
-        }
-        .child-box01{
-            background: #f00;
-            left: 20px;
-            top: 20px;
-        }
-        .child-box02{
-            background: #0f0;
-            left: 220px;
-            top: 20px;
-        }
-        .child-box03{
-            position: fixed;
-            background: #00f;
-            left: 420px;
-            top: 20px;
+            position:relative;
+
+            width:642px;
+            height:242px;
+            margin: 20px auto;
+            border:1px solid black;
+            padding:20px;
         }
 
+        .par-box>div{
+            width:200px;
+            height:200px;
+            position:absolute;
+            top:20px;
+        }
+        .child-box01{
+            background: red;
+            left:20px;
+        }
+        .child-box02{
+            background: green;
+            left:220px;
+        }
+        .par-box>.child-box03{
+            position:fixed;
+            background: blue;
+            left:420px;
+        }
     </style>
 </head>
 <body>
     <div class="par-box">
-        <div class="child-box01">자1</div>
-        <div class="child-box02">자2</div>
-        <div class="child-box03">자3</div>
+        <div class="child-box01">자식1</div>
+        <div class="child-box02">자식2</div>
+        <div class="child-box03">자식3</div>
     </div>
 </body>
 </html>

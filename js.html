@@ -5,40 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Wide Web</title>
-    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./default.css">
+    
 </head>
 <body>
     <h1>WEB</h1>
     <button onclick="
         // let btnMod = document.querySelector('button');
-        if(this.innerText == 'Dark'){
-            nightMode();
-            this.innerText = 'Light';
+        if(this.innerText == 'dark'){
+            darkMode();
+            this.innerText = 'light';
+        }else{
+            lightMode();
+            this.innerText = 'dark';
         }
-        else{
-            daylightMode();
-            this.innerText = 'Dark'
-        }
-    ">Dark</button>  
+    ">dark</button>
     <ol>
-        <li><a href="html.html">HTML</a></li>
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="js.html">javaScript</a></li>
+        <li><a href="./html.html">HTML</a></li>
+        <li><a href="./css.html">CSS</a></li>
+        <li><a href="./js.html">javaScript</a></li>
     </ol>
     <div>
-        <h2>JavaScript</h2>
-        <img src="./imgs/js-img.jpg" alt="js 이미지">
+        <h2>javaScript</h2>
+        <img src="./img-javascript.jpg" alt="javaScript image">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, velit.
-            Sint, id modi sapiente quisquam dolore illum itaque nobis optio!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod ut similique distinctio mollitia perferendis doloremque vero ipsa ex reprehenderit explicabo necessitatibus iste fugiat est, veritatis eveniet. Quae et dolores odio?
             <br>
-            Qui quasi id corrupti adipisci, consequatur nihil illo in dolore.
-            Fuga neque temporibus ullam a iusto rem nisi accusantium odio.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti laudantium iure neque harum magni sit illum quasi, debitis totam aut nobis blanditiis maxime fugiat tenetur voluptatum nihil consectetur similique? Sequi?
             <br>
-            Rerum dolore unde consectetur qui? Quasi optio reprehenderit ipsam quas?
-            Dolor, obcaecati cumque etasd quod ab eius repellat suscipit! Reiciendis.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptatibus? Enim, molestias. Illo inventore nostrum doloremque saepe laboriosam accusantium porro beatae magnam dolor voluptatem! Molestias nam alias omnis a ipsa.
         </p>
     </div>
-    <script src="./js/dark-light.js"></script>
+    <script src="./dark-light.js"></script>
 </body>
 </html>

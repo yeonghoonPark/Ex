@@ -4,40 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        :disabled{
-            color: red;
-        }
-        /* :enabled{
-            color: green;
-        } */
-        input:checked + span{
-            color: green;
-        }
-        input::placeholder{
-            color: blue;
-            font-size: 12px;
-        }
-    </style>
     <title>선택자5</title>
-
+    <style>
+        :disabled{color:red;}
+        /* :enabled{color:green;} */
+        input:checked + span{color:green;}
+        input::placeholder{color:blue;font-size: 20px;}
+    </style>
 </head>
 <body>
     <h1>선택자5</h1>
-    <form action="">
+    <form>
         <fieldset>
             <legend>사용자 정보</legend>
-            <label for="">아이디 <input type="text" value="pam7464" disabled></label>
+            <label>아이디 <input type="text" value="pam7461" disabled></label>
             <br>
-            <label for="">성 명 <input type="text" placeholder="성명을 입력하세요" autofocus></label>
+            <label>성명 <input type="text" placeholder="성명을 입력하세요"></label>
         </fieldset>
 
         <fieldset>
-            <legend>수강신청</legend>
+            <legend>수강 신청</legend>
             <p>신청과목을 선택하세요</p>
-            <label for=""><input type="radio" name="t" checked><span>국어</span></label>
-            <label for=""><input type="radio" name="t"><span>영어</span></label>
-            <label for=""><input type="radio" name="t"><span>수학</span></label>
+            <label>
+                <input type="radio" name="sub" checked>
+                <span>국어</span>
+            </label>
+            <label><input type="radio" name="sub"> <span>영어</span></label>
+            <label><input type="radio" name="sub"> <span>수학</span></label>
         </fieldset>
     </form>
 </body>

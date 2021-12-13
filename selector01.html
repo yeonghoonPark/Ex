@@ -4,53 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* 모든 선택자 */
-        *{
-            color: red;
-        }
-        /* 태그 선택자 */
-        div{
-            color: green;
-        }
-        /* 클래스 선택자 */
-        .box{
-            color: blue;
-        }
-        /* 아이디 선택자 */
-        #box{
-            color: cyan; 
-        }
-        
-        /* 자손 선택자 */
-        li li{
-            color:yellowgreen
-        }
-        ul ul li{
-            color: darkcyan;
-        }
-        /* 자손에서도 우선순위 때문에 id가 먼저 적용된다 id가 더 빠르다 */
-        #edit li{
-            color: black;
-        }
-        .edit li{
-            color: white;
-        }
-        ul .edit li{
-            color: darkgreen;
-        }
-        /* 그룹 선택자 */
-        h1,#box{
-            font-size: 30px;
-            color: black;
-        }
-
-    </style>
     <title>선택자(selector)</title>
+    <style>
+        /* 클래스선택자 */
+        .box{color:blue;}
+        /* 아이디선택자 */
+        #box{color:cyan;}
+        /* 태그선택자 */
+        div{color:green;}
+        li{color:blue;}
+        /* 모든선택자 */
+        *{color:red;}
+
+        /* 자손선택자 */
+        li li{color:yellow;}
+        ul ul li{color:darkcyan;}
+        #edit li{color:black;}
+        .edit li{color:white;}
+        ul .edit li{color:darkgreen;}
+
+        /* 그룹선택자 */
+        h1,#box{
+            font-size:30px;
+            color:black;
+        }
+    </style>
 </head>
 <body>
-    <h1>선택자(selector)</h1>
-    <div class="box" id="box" style="color: hotpink;">박스1</div>
+    <h1>선택자(selector)</h1>    
+    <div class="box" id="box" style="color:magenta;">박스1</div>
     <div>박스2</div>
     <div class="box">박스3</div>
 
@@ -62,7 +44,7 @@
                     <li>새로만들기</li>
                     <li>열기</li>
                     <li>저장</li>
-                    <li>다른 이름으로 저장</li>
+                    <li>다른이름으로 저장</li>
                     <li>종료</li>
                 </ul>
             </li>
@@ -92,5 +74,7 @@
             </li>
         </ul>
     </nav>
+
+
 </body>
 </html>

@@ -4,66 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자3</title>
     <style>
-        a{
-            font-size: 20px;
-            color: black;
-            text-decoration: none;
-
-        }
-        /* 속성 선택자 (에트리뷰트) */
+        a{font-size:20px;color:black;text-decoration:none;}
+        /* 속성 선택자 */
         /* 일치 */
-        a[href="https://naver.com"]{
-            color: green;
+        a[href="https://www.naver.com"] {
+            color:green;
         }
         /* 포함 */
-        a[href *="daum"]{
-            color: blue
+        a[href *= "daum"]{
+            color:blue;
         }
         /* 마지막 */
-        a[href $="com"]{
-            color: red;
+        a[href $= "com"]{
+            color:red;
         }
         /* 시작 */
-        a[href ^="https"]{
-            text-decoration: underline red;
+        a[href ^= "https"]{
+            text-decoration:underline red;
         }
-        button[style]{
-            color: magenta !important;
-        }
+        button[style]{color:black !important;}
 
-        a[href="#"]{
-            color: black;
-        }
-        a[href="#"]:link{
-            color: red;
-        }
-        a[href="#"]:hover{
-            color: green;
-        }
-        a[href="#"]:active{
-            color: blue;
-        }
-        a[href="#"]:visited{
-            color: cyan;
-        }
+        
+        a[href="#"]:link{color:red;}
+        a[href="#"]:hover{color:green;}
+        a[href="#"]:active{color:blue;}
+        a[href="#"]:visited{color:cyan;}
     </style>
-    <title>선택자3</title>
 </head>
 <body>
     <h1>선택자3</h1>
-    <a href="https://naver.com">네이버</a>
+    <a href="https://www.naver.com">네이버</a>
     <br>
-    <a href="https://daum.net">다음</a>
+    <a href="https://www.daum.net">다음</a>
     <br>
-    <a href="https://google.com">구글</a>
+    <a href="https://www.google.com">구글</a>
     <br>
     <a href="http://www.computer.net">컴퓨터닷컴</a>
-    <br>
     <button>버튼</button>
     <button type="submit">전송</button>
-    <button type="reset" style="color:red">취소</button>
-    <br>
+    <button type="reset" style="color:red;">취소</button>
     <a href="#">임시</a>
 </body>
 </html>
