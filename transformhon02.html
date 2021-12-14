@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .par-box{
+            position: relative;
+            width: 1400px;
+            margin: 0 auto;
+        }
+        h1{
+            margin: 100px auto;
+            text-align: center;
+            font-size: 64px;
+        }
+        .box01,.box02,.box03{
+            width: 300px;
+            height: 200px;
+        }
+        .par-box img{
+            width: 300px;
+            height: 200px;
+        }
+        .par-box h2,p{
+            color: #fff;
+            text-align: justify; 
+        }
+        .par-box h2{
+            text-align: center;
+        }
+        
+        .box01{
+            position: absolute;
+            top: 300px;
+            left: 100px;
+            overflow: hidden;
+        }
+        .box01-01{
+            position: absolute;
+            top: -160px;
+            padding: 0 2px;
+            transition: 0.5s;
+            z-index: 10;
+        }
+        .box01:hover .box01-01{
+            position: absolute;
+            top: 20px;
+            padding: 0 2px;
+        }
+        .box01::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 205px;
+            width: 300px;
+            height: 200px;
+            background-color: rgba(40, 35, 35, 0.3);
+            transition: 0.5s;
+            z-index: 5;
+        }
+        .box01:hover::after{
+            position: absolute;
+            top: 1px;
+            
+        }
+
+
+
+        
+        .box02{
+            position: absolute;
+            top: 300px;
+            left: 550px;
+            overflow: hidden;
+        }
+        .box02-01{
+            position: absolute;
+            top: -160px;
+            padding: 0 2px;
+            transition: 0.5s;
+            z-index: 10;
+        }
+        .box02:hover .box02-01{
+            position: absolute;
+            top: 20px;
+            padding: 0 2px;
+        }
+        .box02::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 205px;
+            width: 300px;
+            height: 200px;
+            background-color: rgba(40, 35, 35, 0.3);
+            transition: 0.5s;
+            z-index: 5;
+        }
+        .box02:hover::after{
+            position: absolute;
+            top: 1px;
+            
+        }
+        
+        .box03{
+            position: absolute;
+            top: 300px;
+            left: 1000px;
+            overflow: hidden;
+        }
+        .box03-01{
+            position: absolute;
+            top: -160px;
+            padding: 0 2px;
+            transition: 0.5s;
+            z-index: 10;
+        }
+        .box03:hover .box03-01{
+            position: absolute;
+            top: 20px;
+            padding: 0 2px;
+        }
+        .box03::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 205px;
+            width: 300px;
+            height: 200px;
+            background-color: rgba(40, 35, 35, 0.3);
+            transition: 0.5s;
+            z-index: 5;
+        }
+        .box03:hover::after{
+            position: absolute;
+            top: 1px;
+            
+        }
+    
+
+    </style>
+    <title>신상품 목록</title>
+</head>
+<body>
+    <div class="par-box ">
+        <h1>신상품 목록</h1>
+        <div class="box01">
+            <div class="box01-img">
+                <img src="./images/christmas01.jpg" alt="크리스마스1">
+            </div>
+            <div class="box01-01">
+                <h2>크리스마스1</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed enim, excepturi sapiente culpa veniam explicabo sequi atque maiores voluptates. Deserunt quis voluptas nulla, non quod error sit dolor rerum cumque.
+                </p>
+            </div>
+        </div>
+        <div class="box02">
+            <div class="box02-img"><img src="./images/christmas02.jpg" alt="크리스마스2"></div>
+            <div class="box02-01">
+                <h2>크리스마스2</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed enim, excepturi sapiente culpa veniam explicabo sequi atque maiores voluptates. Deserunt quis voluptas nulla, non quod error sit dolor rerum cumque.
+                </p>
+            </div>
+        </div>
+        <div class="box03">
+            <div class="box03-img"><img src="./images/christmas05.jpg" alt="크리스마스5"></div>
+            <div class="box03-01">
+                <h2>크리스마스3</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed enim, excepturi sapiente culpa veniam explicabo sequi atque maiores voluptates. Deserunt quis voluptas nulla, non quod error sit dolor rerum cumque.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
