@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../faviconhon.png" type="img/x-icon">
+    <title>달나라</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        ul,li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .wrap{
+            width: 960px;
+            margin: 20px auto;
+        }
+        /* header 스타일 */
+        .header{
+            width: 100%;
+            margin: 50px 0;
+            padding: 20px;
+        }
+        .header h1{
+            text-align: center;
+        }
+        .header .nav{
+            float: right;
+            transform: translateY(-20px) translateX(20px);
+        }
+        .header .nav .nav-01{
+            width: 30px;
+            height: 30px;
+            border-radius: 25%;
+            background-color: rgb(17, 15, 134);
+            cursor: pointer;
+        }
+        .nav::after{
+            width: 480px;
+            height: 500px;
+            background-color: #000;
+            opacity: 0.4;
+        }
+        
+        /* section 스타일 */
+        .section{
+            background-image: url(./images/christmas03.jpg);
+            height: 500px;
+            overflow: hidden;
+        }
+        .image-box::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 500px;
+            background-color: #000;
+            opacity: 0.4;
+            transform: translateY(100%);
+            transition: 0.8s;
+            z-index: -99999;
+        }
+        .section:hover ::after{
+            transform: translateY(-77%);
+        }
+        .section:hover h2,.section:hover p{
+            transform: translateY(0);
+        }
+        .section h2,.section p{
+            color: #fff;
+            transform: translateY(-200%);
+            transition: 0.8s;
+            z-index: 10;
+        }
+        .child-box{
+            z-index: 10000;
+        }
+        .section h2{
+            text-align: center;
+            padding: 80px 0 50px;
+        }
+        .section p{
+            padding: 0 80px;
+            text-align: justify;
+            line-height: 2em;
+        }
+        
+        
+
+        /* footer 스타일 */
+        .footer{
+            width: 100%;
+            margin: 30px 0;
+            padding: 20px;
+        }
+        .footer address{
+            text-align: center;
+            font-style: normal;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header">
+            <h1>달나라</h1>
+            <nav class="nav">
+                <div class="nav-01"></div>
+            </nav>
+        </header>
+        <section class="section">
+            <div class="image-box">
+                <div class="child-box">    
+                    <h2>Chirsmas</h2>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque rerum cumque fuga quam illo in numquam quaerat, laudantium voluptates exercitationem mollitia beatae dolorem consequuntur expedita totam, iure, molestias adipisci at!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam distinctio dolorem quia ipsum recusandae non perspiciatis praesentium laboriosam culpa minus amet similique ab esse qui ad, ratione atque nobis fugiat!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore, atque beatae soluta temporibus amet natus tempora excepturi quod maxime sequi qui vel perferendis! Vel temporibus cupiditate nam beatae quod.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <address>달나라</address>
+        </footer>
+    </section>
+</body>
+</html>
