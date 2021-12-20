@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation01</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .par-box{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100px;
+            bottom: 0;
+            border: 10px solid #000;
+            
+            animation-name: ani01;
+            animation-duration: 1s;
+        }
+        .child-box{
+            width: 100px;
+            height: 100px;
+            background: #00f;
+            
+            /* animation-name: ani01, ani02;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 10;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-play-state: paused;
+            animation-fill-mode: forwards; */
+
+            animation: ani03 5s forwards paused;
+
+        }
+        .child-box:hover{
+            animation-play-state: running;
+        }
+        /* 도형 변형 */
+        @keyframes ani01 {
+            from{
+                border-radius: 0;
+            }
+            to{
+                border-radius: 50%;
+            }
+        }
+        /* 이동 */
+        @keyframes ani02 {
+            from{
+                margin-left: 0;
+                transform: rotate(0);
+            }
+            to{
+                margin-left: 900px;
+                transform: rotate(360deg);
+                background: #f00;
+            }
+        }
+        @keyframes ani03 {
+            from{
+                background: #f00;
+            }
+            to{
+                background: #00f;
+            }           
+        }
+    </style>
+</head>
+<body>
+    <h1>animation01</h1>
+    <div class="par-box">
+        <div class="child-box"></div>
+    </div>
+</body>
+</html>

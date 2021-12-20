@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex01</title>
+    <style>
+        *{
+            /* box-sizing: border-box; */
+            margin: 0;
+            padding: 0;
+        }
+        /* .clearfix:after{
+            content: '';
+            display: block;
+            clear: both;
+        } */
+        h1{
+            text-align: center;
+        }
+        
+        .par-box{
+            width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            
+            /* Flex container / 플렉서블 박스 */
+            display: flex;
+            flex-direction: row;
+            /* Flex 주축 가로 reverse */
+            /* flex-direction: row-reverse; */
+            /* Flex 주축 세로 resverse */
+            /* flex-direction: column-reverse; */
+
+            /* 플렉스 컨테이너 줄바꿈 허용여부 */
+            flex-wrap: nowrap;
+            /* flex-wrap: wrap; */
+        }
+
+        .par-box{
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-wrap: nowrap; */
+            flex-flow: row wrap;
+        }
+        .child-box{
+            /* float: left; */
+            width: 600px;
+            height: 150px;
+        }
+        .child-box01{
+            background: #f00;
+        }
+        .child-box02{
+            background: #0f0;
+        }
+        .child-box03{
+            background: #00f;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Flex Container</h1>
+    <div class="par-box clearfix">
+        <div class="child-box child-box01"></div>
+        <div class="child-box child-box02"></div>
+        <div class="child-box child-box03"></div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque rerum autem quod quam quo eos exercitationem deserunt necessitatibus! Sapiente laborum odit assumenda sunt fugit quisquam error laboriosam veritatis doloremque.  
+    </p>
+</body>
+</html>
