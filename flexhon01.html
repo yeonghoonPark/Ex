@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex01</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        } */
+        h2{
+            text-align: center;
+        }
+        .par-box{
+            width: 1200px;
+            margin: 100px auto;
+            border: 1px solid #000;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .child-box{
+            /* float: left; */
+            width: 600px;
+            height: 150px;
+            border: 1px solid #f00;
+            background: #000;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>flex container</h2>
+    <div class="par-box clearfix">
+        <div class="child-box child-box01">1</div>
+        <div class="child-box child-box02">2</div>
+        <div class="child-box child-box03">3</div>
+    </div>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quod doloribus ad, totam vel officia maiores eligendi pariatur quos facilis dignissimos! Nostrum enim quia dolorem aliquam ullam laboriosam blanditiis eveniet!
+    </p>
+</body>
+</html>

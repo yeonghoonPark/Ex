@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .par-box01{
+            width: 700px;
+            height: 500px;
+            margin: 100px auto;
+            border: 1px solid #000;
+
+            display: flex;
+            flex-flow: row wrap;
+           
+            align-content: space-around;
+
+        }
+        .child-box01{
+            width: 100px;
+            height: 100px;
+            margin: 0 0 0 100px;
+            border: 2px solid #f00;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .par-box02{
+            width: 1000px;
+            height: 300px;
+            margin: 0 auto;
+            border: 1px solid #000;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .child-box02{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #f00;
+
+            align-self: flex-start;
+        }
+        .child-box02-02{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #f00;
+
+            align-self: center;
+        }
+        .child-box02-03{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #f00;
+
+            align-self: flex-end;
+        }
+        @media (min-width: 768px) {
+            .child-box02-01{
+                align-self: flex-end;
+            }
+            .child-box02-03{
+                align-self: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="par-box01">
+        <div class="child-box01 child-box01">1</div>
+        <div class="child-box01 child-box02">2</div>
+        <div class="child-box01 child-box03">3</div>
+        <div class="child-box01 child-box04">4</div>
+        <div class="child-box01 child-box05">5</div>
+        <div class="child-box01 child-box06">6</div>
+    </div>
+    <div class="par-box02">
+        <div class="child-box02 child-box02-01">2-1</div>
+        <div class="child-box02 child-box02-02">2-2</div>
+        <div class="child-box02 child-box02-03">2-3</div>
+    </div>
+</body>
+</html>
