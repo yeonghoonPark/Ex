@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .par-box{
+            width: 1200px;
+            margin: 0 auto;
+            padding: 12px;
+
+            display: grid;
+            grid-template-columns: repeat(16,1fr);
+            gap: 12px;
+        }
+        .child-box{
+            border: 2px solid gray;
+            border-radius: 10px;
+            background: #f00;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: -2px -2px 0 rgba(255, 255, 255, 0.5);
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .child-box01{
+            grid-column-start: 1;
+            grid-column-end: 16;
+        }
+        .child-box02{
+            grid-column: 1/10;
+        }
+        .child-box03{
+            grid-column: 10/16;
+        }
+        .child-box04{
+            grid-column: 1/10;
+        }
+        .child-box05{
+            grid-column: 10/12;
+        }
+        .child-box06{
+            grid-column: 12/16;
+        }
+    </style>
+</head>
+<body>
+    <div class="par-box">
+        <div class="child-box child-box01">1</div>
+        <div class="child-box child-box02">2</div>
+        <div class="child-box child-box03">3</div>
+        <div class="child-box child-box04">4</div>
+        <div class="child-box child-box05">5</div>
+        <div class="child-box child-box06">6</div>
+    </div>
+</body>
+</html>

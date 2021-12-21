@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0;
+        } */
+        h1{
+            text-align: center;
+        }
+        .par-box01{
+            width: 1132px;
+            margin: 20px auto;
+            padding: 20px;
+            background: lightblue;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            
+        }
+        .child-box{
+            margin-right: 20px;
+            flex: 1;
+            background: #fff;
+            text-align: center;
+        }
+        .child-box03{
+            margin-right: 0;
+        }
+        .par-box02{
+            width: 1132px;
+            margin: 20px auto;
+            padding: 20px;
+            background: lightcoral;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 20px;
+            
+        }
+        .grid-box{
+            background: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>grid</h1>
+    <div class="par-box01">
+        <div class="child-box child-box01">플렉스1</div>
+        <div class="child-box child-box02">플렉스2</div>
+        <div class="child-box child-box03">플렉스3</div>
+    </div>
+    <div class="par-box02">
+        <div class="grid-box grid-box01">그리드1</div>
+        <div class="grid-box grid-box02">그리드2</div>
+        <div class="grid-box grid-box03">그리드3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .par-box{
+            width: 960px;
+            margin: 20px auto;
+            padding: 0 10px;
+            background: lightcoral;
+
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 100px 300px 300px;
+            gap: 20px 20px;
+        }
+        .child-box01{
+            height: 60px;
+            background: lightcyan;
+            
+            grid-column: 5/9;
+            align-self: center;
+        }
+        .child-box02{
+            height: 60px;
+            background: lightgreen;
+            grid-column: 12/13;
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="par-box">
+        <div class="child-box01"></div>
+        <div class="child-box02"></div>
+    </div>
+</body>
+</html>
